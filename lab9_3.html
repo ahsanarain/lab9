@@ -1,0 +1,35 @@
+<html>
+<head>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#4").focus(function(){
+	$("#1").text("first name");
+	//$("#2").hide();
+	//$("#3").hide();
+});
+$("#5").focus(function(){
+	//$("#1").hide();
+	$("#1").text("middle name");
+	//$("#3").hide();
+});
+$("#6").focus(function(){
+	//$("#1").hide();
+	//$("#2").hide();
+	$("#1").text("last name");
+});
+});
+</script>
+
+</head>
+<body>
+
+<input id="4" type="text" value="first_name"><br>
+<input id="5" type="text" value="middle_name"><br>
+<input id="6" type="text" value="last_name"><br>
+<span id="1"></span>
+<!-- <span id="2"></span>
+<span id="3"></span> -->
+</body>
+</html>
